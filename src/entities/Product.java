@@ -1,10 +1,13 @@
-package application;
+package entities;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Product {
     private String name;
     private String category;
     private Double price;
-    
+    private List<OrderItem> items = new ArrayList<>();
     public Product (){
 
     }
@@ -38,4 +41,8 @@ public class Product {
     public void setPrice(Double price) {
         this.price = price;
     }
+
+
+
+
 }
